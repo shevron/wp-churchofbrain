@@ -109,21 +109,25 @@ a:hover {
 	width: 100%;
 	border-radius: 5px;
 }
+
 #access ul {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
 }
+
 #access li {
 	float: left;
 	position: relative;
 }
+
 #access a {
 	display: block;
 	line-height: 2em;
 	padding: 0 1em;
 	text-decoration: none;
 }
+
 #access ul ul {
 	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -135,28 +139,38 @@ a:hover {
 	left: 0;
 	z-index: 99999;
 }
+
 #access ul ul ul {
 	left: 100%;
 	top: 0;
 }
+
 #access ul ul a {
-	background: #7AACCF;
+	background: #F8C98C;
 	line-height: 1em;
 	padding: .5em .5em .5em 1em;
 	width: 10em;
 	height: auto;
 }
-#access li:hover > a,
-#access ul ul :hover > a {
+
+#access li:hover > a, #access ul ul :hover > a {
 	background: #589ECF;
+	color: #fff;
 }
+
 #access ul ul a:hover {
-	background: #F8B660;
+	background: #589ECF;
+	color: #fff;
 }
+
+#access ul li:first-child { 
+	border-left-top-radius: 5px;
+	border-left-bottom-radius: 5px;
+}
+
 #access ul li:hover > ul {
 	display: block;
 }
-
 
 /* =Content
 -------------------------------------------------------------- */
