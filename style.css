@@ -18,6 +18,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* =Structure
 -------------------------------------------------------------- */
 
+body { 
+	margin: 0;
+}
+
 a { 
 	color: #22699A;
 }
@@ -29,7 +33,6 @@ a:hover {
 #page {
 	font-family: Quattrocento, Georgia, serif;
 	display: block;
-	margin: 1em;
 }
 
 #primary {
@@ -85,6 +88,10 @@ a:hover {
 
 /* =Header
 -------------------------------------------------------------- */
+
+#page > header { 
+	padding: 2em;
+}
 
 #site-title {
 	font-size: 2em;
@@ -171,7 +178,7 @@ a:hover {
 #access ul li:hover > ul {
 	display: block;
 }
-
+	
 /* =Sidebar
 -------------------------------------------------------------- */
 
@@ -200,6 +207,7 @@ aside ul li {
 .entry-meta {
 	clear: both;
 	display: block;
+	font-size: 10pt;
 }
 .single-author .entry-meta .byline {
 	display: none;
@@ -322,11 +330,8 @@ aside ul li {
 article header h1 {
 	margin-bottom: 0;
 }
-article .entry-content { 
-	margin-left: 2em;
-}
 article footer {
-	font-size: 0.7em;
+	font-size: 10pt;
 	margin: 2em;
 	color: #668;
 }
@@ -447,7 +452,27 @@ article.comment {
 	margin-top: 1em;
 	padding: 1em;
 	background-color: #0D4369;
-	color: #22699A;
+	color: #ccf;
 	text-align: center;
 	font-size: 10pt;
+}
+
+#colophon a {
+	color: #ccf;
+}
+
+/* =Clearfix hack
+-------------------------------------------------------------- */
+
+.group:before, .group:after {
+    content:"";
+    display:table;
+}
+
+.group:after {
+    clear:both;
+}
+
+.group {
+    zoom:1; /* For IE 6/7 */
 }
