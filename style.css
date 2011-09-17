@@ -13,15 +13,21 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+@import url("http://fonts.googleapis.com/css?family=Quattrocento");
+
 /* =Structure
 -------------------------------------------------------------- */
-@import url("http://fonts.googleapis.com/css?family=Prociono");
+
+a { 
+	color: #0D4369;
+}
 
 #page {
-	font-family: Prociono, Tahoma, sans-serif;
+	font-family: Quattrocento, Georgia, serif;
 	display: block;
 	margin: 1em;
 }
+
 #primary {
 	float: left;
 	margin: 0 -240px 0 0;
@@ -75,10 +81,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* =Header
 -------------------------------------------------------------- */
-
-header { 
-	font-family: "Prociono", Tahoma, sans-serif;
-}
 
 #site-title {
 	font-size: 2em;
@@ -279,6 +281,11 @@ header {
 	padding-top: 0;
 }
 
+acticle footer {
+	font-size: 0.7em;
+	margin: 2em;
+	color: #668;
+}
 
 /* =Images
 -------------------------------------------------------------- */
