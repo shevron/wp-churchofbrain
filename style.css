@@ -30,6 +30,12 @@ a:hover {
 	text-decoration: none;
 }
 
+#main {
+	width: 970px;
+	margin: auto;
+	padding: 2em;
+}
+
 #page {
 	font-family: Quattrocento, Georgia, serif;
 	display: block;
@@ -90,7 +96,9 @@ a:hover {
 -------------------------------------------------------------- */
 
 #page > header { 
-	padding: 2em;
+	width: 970px;
+	padding: 1em;
+	margin: auto;
 }
 
 #site-title {
@@ -459,6 +467,11 @@ article.comment {
 
 #colophon a {
 	color: #ccf;
+}
+
+#colophon div {
+	width: 970px;
+	margin: 0 auto;
 }
 
 /* =Clearfix hack
