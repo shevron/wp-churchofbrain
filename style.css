@@ -19,11 +19,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 
 a { 
-	color: #0D4369;
+	color: #22699A;
 }
 
 a:hover { 
-	color: #22699A;
+	text-decoration: none;
 }
 
 #page {
@@ -176,11 +176,11 @@ a:hover {
 -------------------------------------------------------------- */
 
 aside {
-	margin-bottom: 2em;
+	margin: 1em 0;
 }
 
 aside h1 {
-	margin: 0 0 1em 0;
+	margin: 0 0 0.5em 0;
 }
 
 aside ul {
@@ -318,8 +318,13 @@ aside ul li {
 .single .format-image .entry-content,
 .single .format-image .entry-summary {
 	padding-top: 0;
+}	
+article header h1 {
+	margin-bottom: 0;
 }
-
+article .entry-content { 
+	margin-left: 2em;
+}
 article footer {
 	font-size: 0.7em;
 	margin: 2em;
