@@ -164,8 +164,8 @@ a:hover {
 }
 
 #access ul li:first-child { 
-	border-left-top-radius: 5px;
-	border-left-bottom-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 #access ul li:hover > ul {
