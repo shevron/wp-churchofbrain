@@ -163,7 +163,7 @@ a:hover {
 	color: #fff;
 }
 
-#access ul li:first-child { 
+#access ul li:first-child, #access ul li:first-child a { 
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
