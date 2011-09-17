@@ -44,7 +44,7 @@ a:hover {
 #primary {
 	float: left;
 	margin: 0 -240px 0 0;
-	width: 100%;
+	width: 970px;
 }
 #content {
 	margin: 0 280px 0 0;
@@ -53,11 +53,6 @@ a:hover {
 	float: right;
 	overflow: hidden;
 	width: 220px;
-}
-#colophon {
-	clear: both;
-	display: block;
-	width: 100%;
 }
 
 /* Increase the size of the content area for templates without sidebars */
@@ -463,6 +458,8 @@ article.comment {
 	color: #ccf;
 	text-align: center;
 	font-size: 10pt;
+	clear: both;
+	display: block;
 }
 
 #colophon a {
@@ -473,6 +470,7 @@ article.comment {
 	width: 970px;
 	margin: 0 auto;
 }
+
 
 /* =Clearfix hack
 -------------------------------------------------------------- */
