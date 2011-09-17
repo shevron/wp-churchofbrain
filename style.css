@@ -13,19 +13,38 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+@import url("http://fonts.googleapis.com/css?family=Quattrocento");
+
 /* =Structure
 -------------------------------------------------------------- */
-@import url("http://fonts.googleapis.com/css?family=Prociono");
+
+body { 
+	margin: 0;
+}
+
+a { 
+	color: #22699A;
+}
+
+a:hover { 
+	text-decoration: none;
+}
+
+#main {
+	width: 970px;
+	margin: auto;
+	padding: 2em;
+}
 
 #page {
-	font-family: Tahoma, sans-serif;
+	font-family: Quattrocento, Georgia, serif;
 	display: block;
-	margin: 1em;
 }
+
 #primary {
 	float: left;
 	margin: 0 -240px 0 0;
-	width: 100%;
+	width: 970px;
 }
 #content {
 	margin: 0 280px 0 0;
@@ -34,11 +53,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	float: right;
 	overflow: hidden;
 	width: 220px;
-}
-#colophon {
-	clear: both;
-	display: block;
-	width: 100%;
 }
 
 /* Increase the size of the content area for templates without sidebars */
@@ -76,6 +90,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* =Header
 -------------------------------------------------------------- */
 
+#page > header { 
+	width: 970px;
+	padding: 1em;
+	margin: auto;
+}
+
 #site-title {
 	font-size: 2em;
 	font-weight: bold;
@@ -92,27 +112,32 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 
 #access {
-	background: #eee;
+	background: #F8C98C;
 	display: block;
 	float: left;
 	margin: 0 auto 1em;
 	width: 100%;
+	border-radius: 5px;
 }
+
 #access ul {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
 }
+
 #access li {
 	float: left;
 	position: relative;
 }
+
 #access a {
 	display: block;
 	line-height: 2em;
 	padding: 0 1em;
 	text-decoration: none;
 }
+
 #access ul ul {
 	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -124,28 +149,58 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	left: 0;
 	z-index: 99999;
 }
+
 #access ul ul ul {
 	left: 100%;
 	top: 0;
 }
+
 #access ul ul a {
-	background: #dedede;
+	background: #F8C98C;
 	line-height: 1em;
 	padding: .5em .5em .5em 1em;
 	width: 10em;
 	height: auto;
 }
-#access li:hover > a,
-#access ul ul :hover > a {
-	background: #dedede;
+
+#access li:hover > a, #access ul ul :hover > a {
+	background: #589ECF;
+	color: #fff;
 }
+
 #access ul ul a:hover {
-	background: #cecece;
+	background: #589ECF;
+	color: #fff;
 }
+
+#access ul li:first-child, #access ul li:first-child a { 
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
 #access ul li:hover > ul {
 	display: block;
 }
+	
+/* =Sidebar
+-------------------------------------------------------------- */
 
+aside {
+	margin: 1em 0;
+}
+
+aside h1 {
+	margin: 0 0 0.5em 0;
+}
+
+aside ul {
+	padding-left: 1em;
+	list-style-type: none;
+}
+
+aside ul li {
+	margin-bottom: 0.5em;
+}
 
 /* =Content
 -------------------------------------------------------------- */
@@ -155,6 +210,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .entry-meta {
 	clear: both;
 	display: block;
+	font-size: 10pt;
 }
 .single-author .entry-meta .byline {
 	display: none;
@@ -275,6 +331,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	padding-top: 0;
 }
 
+article {
+	margin-bottom: 3em;
+}
+article header h1 {
+	margin-bottom: 0;
+}
+article footer {
+	font-size: 10pt;
+	margin: 2em;
+	color: #668;
+}
 
 /* =Images
 -------------------------------------------------------------- */
@@ -389,6 +456,38 @@ article.comment {
 -------------------------------------------------------------- */
 
 #colophon {
-	padding: 1em 0 0;
+	margin-top: 1em;
+	padding: 1em;
+	background-color: #0D4369;
+	color: #ccf;
+	text-align: center;
+	font-size: 10pt;
+	clear: both;
+	display: block;
 }
 
+#colophon a {
+	color: #ccf;
+}
+
+#colophon div {
+	width: 970px;
+	margin: 0 auto;
+}
+
+
+/* =Clearfix hack
+-------------------------------------------------------------- */
+
+.group:before, .group:after {
+    content:"";
+    display:table;
+}
+
+.group:after {
+    clear:both;
+}
+
+.group {
+    zoom:1; /* For IE 6/7 */
+}
