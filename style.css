@@ -329,7 +329,11 @@ aside ul li {
 .single .format-image .entry-content,
 .single .format-image .entry-summary {
 	padding-top: 0;
-}	
+}
+
+article {
+	margin-bottom: 3em;
+}
 article header h1 {
 	margin-bottom: 0;
 }
