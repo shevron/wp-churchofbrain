@@ -102,11 +102,12 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-	background: #eee;
+	background: #F8C98C;
 	display: block;
 	float: left;
 	margin: 0 auto 1em;
 	width: 100%;
+	border-radius: 5px;
 }
 #access ul {
 	list-style: none;
@@ -139,7 +140,7 @@ a:hover {
 	top: 0;
 }
 #access ul ul a {
-	background: #dedede;
+	background: #7AACCF;
 	line-height: 1em;
 	padding: .5em .5em .5em 1em;
 	width: 10em;
@@ -147,10 +148,10 @@ a:hover {
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #dedede;
+	background: #589ECF;
 }
 #access ul ul a:hover {
-	background: #cecece;
+	background: #F8B660;
 }
 #access ul li:hover > ul {
 	display: block;
