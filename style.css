@@ -13,7 +13,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import url("http://fonts.googleapis.com/css?family=Quattrocento");
+@import url("http://fonts.googleapis.com/css?family=Telex|Montaga");
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -37,7 +37,7 @@ a:hover {
 }
 
 #page {
-	font-family: Quattrocento, Georgia, serif;
+	font-family: Telex, sans-serif;
 	display: block;
 }
 
@@ -53,6 +53,7 @@ a:hover {
 	float: right;
 	overflow: hidden;
 	width: 220px;
+	padding-top: 1em;
 }
 
 /* Increase the size of the content area for templates without sidebars */
@@ -90,21 +91,28 @@ a:hover {
 /* =Header
 -------------------------------------------------------------- */
 
-#page > header { 
+#page > header {
 	width: 970px;
 	padding: 1em;
 	margin: auto;
 }
 
 #site-title {
-	font-size: 2em;
+	font-family: Montaga, Georgia, serif;
+	font-size: 3em;
 	font-weight: bold;
-	margin: .67em 0;
+	margin: .67em 0 0 0;
 }
+
+h1 a, h2 a {
+	text-decoration: none;
+}
+
 #site-description {
+	font-family: Montaga, Georgia, serif;
 	font-size: 1em;
 	font-weight: normal;
-	margin: 0 0 1em;
+	margin: 0 0 2em;
 }
 
 
@@ -112,12 +120,13 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-	background: #F8C98C;
+	background: #e0e0e0;
 	display: block;
 	float: left;
 	margin: 0 auto 1em;
 	width: 100%;
 	border-radius: 5px;
+	box-shadow: 0 0 10px #e0e0e0;
 }
 
 #access ul {
@@ -186,7 +195,8 @@ a:hover {
 -------------------------------------------------------------- */
 
 aside {
-	margin: 1em 0;
+	font-size: 0.8em;
+	margin: 1em 0 2em 0;
 }
 
 aside h1 {
@@ -194,7 +204,7 @@ aside h1 {
 }
 
 aside ul {
-	padding-left: 1em;
+	padding-left: 0;
 	list-style-type: none;
 }
 
@@ -211,7 +221,15 @@ aside ul li {
 	clear: both;
 	display: block;
 	font-size: 10pt;
+	text-align: right;
+	color: #909090;
 }
+
+.entry-meta a {
+	color: #4289AA;
+	text-decoration: none;
+}
+
 .single-author .entry-meta .byline {
 	display: none;
 }
@@ -332,8 +350,11 @@ aside ul li {
 }
 
 article {
-	margin-bottom: 3em;
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom: 2em;
+	margin-bottom: 2em;
 }
+
 article header h1 {
 	margin-bottom: 0;
 }
@@ -457,11 +478,11 @@ article.comment {
 
 #colophon {
 	margin-top: 1em;
-	padding: 1em;
+	padding: 2em;
 	background-color: #0D4369;
 	color: #ccf;
 	text-align: center;
-	font-size: 10pt;
+	font-size: 9pt;
 	clear: both;
 	display: block;
 }
@@ -475,6 +496,38 @@ article.comment {
 	margin: 0 auto;
 }
 
+ol.commentlist { 
+	list-style-type: none;
+	font-size: 10pt;
+}
+
+ol.commentlist footer { 
+	margin: 1em 0;	
+}
+
+ol.commentlist article footer .vcard { 
+	font-size: 12pt;
+}
+
+ol.commentlist article footer .comment-meta {
+	padding-top: 3px;
+	font-size: 9pt;
+}
+
+ol.commentlist article footer img {
+	float: left; 
+	padding-right: 5px; 
+}
+
+ol.commentlist ul { 
+	list-style-type: none;
+}
+
+/* =Entry Content Adjustments
+-------------------------------------------------------------- */
+.entry-content li {
+	margin: 0.5em 0;
+}
 
 /* =Clearfix hack
 -------------------------------------------------------------- */
