@@ -498,10 +498,30 @@ article.comment {
 
 ol.commentlist { 
 	list-style-type: none;
+	font-size: 10pt;
 }
 
-ol.commentlist li { 
-}	
+ol.commentlist footer { 
+	margin: 1em 0;	
+}
+
+ol.commentlist article footer .vcard { 
+	font-size: 12pt;
+}
+
+ol.commentlist article footer .comment-meta {
+	padding-top: 3px;
+	font-size: 9pt;
+}
+
+ol.commentlist article footer img {
+	float: left; 
+	padding-right: 5px; 
+}
+
+ol.commentlist ul { 
+	list-style-type: none;
+}
 
 /* =Entry Content Adjustments
 -------------------------------------------------------------- */
